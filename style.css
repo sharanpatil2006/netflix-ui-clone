@@ -1,0 +1,326 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #141414;
+    color: white;
+}
+
+
+/* EDUCATIONAL DISCLAIMER */
+.disclaimer {
+    background: #e50914;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* NAVBAR */
+.navbar {
+    height: 70px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    background: #111;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.nav-links a:hover {
+    color: #b3b3b3;
+}
+
+
+/* HERO SECTION */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(
+            to right,
+            #000 20%,
+            rgba(0, 0, 0, 0.6),
+            transparent
+        ),
+        linear-gradient(
+            135deg,
+            #1f1f1f,
+            #3b0a0a
+        );
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* HERO BUTTONS */
+.play-btn,
+.info-btn {
+    border: none;
+    padding: 12px 25px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.play-btn {
+    background: white;
+    color: black;
+}
+
+.info-btn {
+    background: #555;
+    color: white;
+}
+
+.play-btn:hover,
+.info-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* MOVIE SECTIONS */
+.movie-section {
+    padding: 40px 5%;
+}
+
+.movie-section h2 {
+    margin-bottom: 20px;
+}
+
+
+/* MOVIE ROW */
+.movie-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+
+/* MOVIE CARD */
+.movie-card {
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* POSTER */
+.poster {
+    width: 100%;
+    height: 230px;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 20px;
+    border-radius: 8px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+
+    overflow: hidden;
+}
+
+.poster h3 {
+    font-size: 20px;
+    text-shadow: 2px 2px 6px black;
+}
+
+
+/* MOVIE POSTER IMAGES */
+
+/* DARK */
+/* MOVIE POSTER IMAGES */
+
+.poster1 {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85),
+            transparent 60%
+        ),
+        url("Dark.jpg");
+}
+
+.poster2 {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85),
+            transparent 60%
+        ),
+        url("money heist.png");
+}
+
+.poster3 {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85),
+            transparent 60%
+        ),
+        url("wednesday.jpg");
+}
+
+.poster4 {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85),
+            transparent 60%
+        ),
+        url("lucifer.jpg");
+}
+
+.poster5 {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85),
+            transparent 60%
+        ),
+        url("Ala vaikuntapuramloo.jpg");
+}
+
+.poster6 {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85),
+            transparent 60%
+        ),
+        url("spider-man-homecoming.jpg");
+}
+
+.poster7 {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85),
+            transparent 60%
+        ),
+        url("swapped.webp");
+}
+
+.poster8 {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85),
+            transparent 60%
+        ),
+        url("dhurandhar.jpg");
+}
+
+
+/* FOOTER */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 30px;
+    color: #888;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    .movie-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0 0 10px 0;
+    }
+
+    .nav-links a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 450px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .movie-row {
+        grid-template-columns: 1fr;
+    }
+
+    .poster {
+        height: 200px;
+    }
+}
